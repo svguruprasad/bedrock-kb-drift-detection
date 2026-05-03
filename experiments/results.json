@@ -1,0 +1,194 @@
+{
+  "No drift (same model, different invocations)": {
+    "tier": "Green",
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "details": [
+      {
+        "query": "What does comprehensive coverage include?",
+        "mean": 0.9887,
+        "std": 0.0004,
+        "t_stat": 1132.7352,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "How do I file a claim after an accident?",
+        "mean": 0.9886,
+        "std": 0.0007,
+        "t_stat": 671.7515,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "What is the standard deductible for collision coverage?",
+        "mean": 0.9887,
+        "std": 0.0007,
+        "t_stat": 644.5292,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "Are rental cars covered under my policy?",
+        "mean": 0.9889,
+        "std": 0.0006,
+        "t_stat": 781.3227,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "What exclusions apply to flood damage?",
+        "mean": 0.9887,
+        "std": 0.0003,
+        "t_stat": 1301.7305,
+        "p_value": 1.0,
+        "passed": true
+      }
+    ]
+  },
+  "Minor drift (minor version update)": {
+    "tier": "Green",
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "details": [
+      {
+        "query": "What does comprehensive coverage include?",
+        "mean": 0.9871,
+        "std": 0.0017,
+        "t_stat": 248.4064,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "How do I file a claim after an accident?",
+        "mean": 0.9873,
+        "std": 0.0016,
+        "t_stat": 263.2473,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "What is the standard deductible for collision coverage?",
+        "mean": 0.9875,
+        "std": 0.0017,
+        "t_stat": 260.0995,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "Are rental cars covered under my policy?",
+        "mean": 0.9871,
+        "std": 0.0016,
+        "t_stat": 268.5705,
+        "p_value": 1.0,
+        "passed": true
+      },
+      {
+        "query": "What exclusions apply to flood damage?",
+        "mean": 0.9865,
+        "std": 0.0023,
+        "t_stat": 186.7095,
+        "p_value": 1.0,
+        "passed": true
+      }
+    ]
+  },
+  "Moderate drift (major version update)": {
+    "tier": "Green",
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "details": [
+      {
+        "query": "What does comprehensive coverage include?",
+        "mean": 0.855,
+        "std": 0.0091,
+        "t_stat": 1.7348,
+        "p_value": 0.9416,
+        "passed": true
+      },
+      {
+        "query": "How do I file a claim after an accident?",
+        "mean": 0.8532,
+        "std": 0.0061,
+        "t_stat": 1.6652,
+        "p_value": 0.9349,
+        "passed": true
+      },
+      {
+        "query": "What is the standard deductible for collision coverage?",
+        "mean": 0.8527,
+        "std": 0.0091,
+        "t_stat": 0.9485,
+        "p_value": 0.8162,
+        "passed": true
+      },
+      {
+        "query": "Are rental cars covered under my policy?",
+        "mean": 0.8552,
+        "std": 0.007,
+        "t_stat": 2.3314,
+        "p_value": 0.9777,
+        "passed": true
+      },
+      {
+        "query": "What exclusions apply to flood damage?",
+        "mean": 0.8552,
+        "std": 0.0054,
+        "t_stat": 3.0453,
+        "p_value": 0.9931,
+        "passed": true
+      }
+    ]
+  },
+  "Major drift (model family change)": {
+    "tier": "Red",
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "details": [
+      {
+        "query": "What does comprehensive coverage include?",
+        "mean": 0.4239,
+        "std": 0.0355,
+        "t_stat": -37.999,
+        "p_value": 0.0,
+        "passed": false
+      },
+      {
+        "query": "How do I file a claim after an accident?",
+        "mean": 0.4142,
+        "std": 0.0194,
+        "t_stat": -71.0013,
+        "p_value": 0.0,
+        "passed": false
+      },
+      {
+        "query": "What is the standard deductible for collision coverage?",
+        "mean": 0.4132,
+        "std": 0.033,
+        "t_stat": -41.8211,
+        "p_value": 0.0,
+        "passed": false
+      },
+      {
+        "query": "Are rental cars covered under my policy?",
+        "mean": 0.4217,
+        "std": 0.0238,
+        "t_stat": -56.8422,
+        "p_value": 0.0,
+        "passed": false
+      },
+      {
+        "query": "What exclusions apply to flood damage?",
+        "mean": 0.4323,
+        "std": 0.0233,
+        "t_stat": -56.6676,
+        "p_value": 0.0,
+        "passed": false
+      }
+    ]
+  }
+}
